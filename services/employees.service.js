@@ -1,7 +1,7 @@
 const db = require('../db')
 
 module.exports.getAllEmployees = async () =>{
-    const [records] =await db.query("SELECT * FROM employees")
+    const [records] =await db.query("SELECT * FROM employee_db.employees")
    return records
 }
 
